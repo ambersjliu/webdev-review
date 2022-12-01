@@ -12,35 +12,56 @@
     <body>
         <h1>Catboy Pitbull Fanpage!</h1>
         <div class="page-content">
-            <section>
+            <section class="pics">
                 <h2>Catboy Pitbull Pics :D</h2>
                 <img src="pic1.jpg" alt="A picture of Pitbull-kun looking cute!!">
-                <!--Add the rest of the images here. Remember to write an alt text description.-->
+                <img src="pic2.jpg" alt="A second picture of PItbull being kawaii..">
+                <img src="pic3.jpg" alt="A second picture of PItbull being kawaii..">
+                <img src="pic4.jpg" alt="A second picture of PItbull being kawaii..">
             </section>
-            <section>
+            <section class="lists">
                 <h2>Some lists about Catboy Pitbull :D</h2>
                 <h3>Why I stan Pitbull :3</h3>
+                <ul>
+                    <li>His kawaii silly bald head nya!!!</li>
+                    <li>His cutesy soft voice!!! So aegyo!!</li>
+                    <li>His strong muscular body!!! Senpai!!</li>
+                </ul>
                 <!--Make an unordered list here.-->
                 <h3>Top 3 things Pitbull-kun doesn't like :(</h3>
+                <ol>
+                    <li>the gender wage gap :(</li>
+                    <li> grippers</li>
+                    <li>harry potter</li>
+                </ol>
                 <!--Make an ordered list here.-->
             </section>
             <section>
                 <h2>Sign up for Pitbull Updates!!!</h2>
                 <form action="http://catboypitbullfanpage.com/">
-                    <label id="name">Name: <input type="text" id="name" required placeholder="Enter your name..."/></label>
+                    <label for="name">Name: <input type="text" id="name" required placeholder="Enter your name..."/></label>
                     <!--Add the email input here-->
-                    
+                    <label for="email">Email: <input type="email" id="email" required placeholder="Enter your email..."></label>
                     <label id="interest">What is your level of interest?
                         <select id="interest">
                             <option value="">(select one)</option>
                             <option value="1">Just a casual fan...</option>
+                            <option value="2">hmmm ....  a bit curious tbh...</option>
+                            <option value="3">I'm very interested...</option>
+                            <option value="4">TAKE MY MONEY</option>
                             <!--Add more options here-->
                         </select>
                     </label>
                     
                     <!--Add the radio buttons here-->
 
-
+                    <p>Would you like to see some...heh...secret content?</p>
+                    <label>Yes please!!
+                        <input type="radio" name="secret" value="yes">
+                    </label>
+                    <label>No thanks
+                        <input type="radio" name="secret" value="no">
+                    </label>
                     <input type="submit" value="Submit" id="submit">
                 </form>
             </section>
