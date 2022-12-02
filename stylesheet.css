@@ -1,44 +1,69 @@
-label{
-    display:block
+label {
+  display: block;
 }
 
-.page-content{
-    width: 70%;
-    margin: auto;
+.page-content {
+  width: 70%;
+  margin: auto;
 }
 
-:root{
-
-    --teal-text: rgb(94, 255, 244);
-    --pink-background: #ffa3d4;
-    font-family: Comic Sans MS;
+:root {
+  --teal-text: rgb(94, 255, 244);
+  --pink-background: #ffa3d4;
+  font-family: Comic Sans MS;
 }
 
-h1{
-    margin: auto;
-    text-align: center;
-    font-size: 2em;
-    transition: font-size 1s;
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+  transition: font-size 1s;
 }
 
-h1:hover{
-    font-size: 3em;
+h1:hover {
+  font-size: 3em;
 }
 
-img{
-    width: 30%;
-    height: 30%;
-    display: block;
-    margin: 5% auto 5% auto;
-    transition: width 1s, height 1s;
+img {
+  width: 30%;
+  height: 30%;
+  display: block;
+  margin: 5% auto 5% auto;
+  transition: width 1s, height 1s;
 }
 
-img:hover{
-    width: 35%;
-    height: 35%
+img:hover {
+  width: 35%;
+  height: 35%;
 }
 
-body{
-    color: var(--teal-text);
-    background-color: var(--pink-background);
+body {
+  color: var(--teal-text);
+  background-color: var(--pink-background);
+}
+
+.pulse {
+  animation: pulse forwards infinite 600ms ease-in-out;
+}
+
+#submit {
+  transition: scale 0.2s ease;
+}
+
+#submit:active {
+  scale: 0.95;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    translate: -8rem;
+    transform: rotate(-15deg);
+  }
+  50% {
+    opacity: 1;
+    translate: 8rem;
+    transform: rotate(15deg);
+  }
 }
