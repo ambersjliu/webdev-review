@@ -42,8 +42,8 @@ body {
   background-color: var(--pink-background);
 }
 
-.pulse {
-  animation: pulse forwards infinite 600ms ease-in-out;
+.dance {
+  animation: dance forwards infinite 600ms ease-in-out;
 }
 
 #submit {
@@ -54,7 +54,7 @@ body {
   scale: 0.95;
 }
 
-@keyframes pulse {
+@keyframes dance {
   0%,
   100% {
     opacity: 0.5;
