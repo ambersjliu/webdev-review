@@ -4,8 +4,41 @@ label {
 
 .page-content {
   width: 70%;
-  margin: auto;
+  margin: 0 auto 0 auto;
 }
+
+header{
+  width: 100%;
+  height: 5em;
+  background-color: #cf2b70;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+  height: 4em;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 :root {
   --teal-text: rgb(94, 255, 244);
@@ -16,13 +49,10 @@ label {
 h1 {
   margin: auto;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   transition: font-size 1s;
 }
 
-h1:hover {
-  font-size: 3em;
-}
 
 img {
   width: 30%;
@@ -67,3 +97,4 @@ body {
     transform: rotate(15deg);
   }
 }
+
