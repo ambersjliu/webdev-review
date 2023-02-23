@@ -92,6 +92,17 @@ h2{
   height: 35%;
 }
 
+@media screen and (max-width: 600px) {
+  h2{
+    margin-top: 30%;
+  }
+  .moving-img {
+    width: 70%;
+    height: 70%;
+  }
+  
+}
+
 body {
   color: var(--teal-text);
   background-color: var(--pink-background);
