@@ -63,6 +63,7 @@ li > a {
 .page-content {
   width: 100%;
   margin: 0 auto 0 auto;
+  padding: 0 2rem 0;
   grid-area: content;
 }
 
@@ -81,7 +82,7 @@ h2{
 
 .moving-img {
   width: 30%;
-  height: 30%;
+  height: auto;
   display: block;
   margin: 5% auto 5% auto;
   transition: width 1s, height 1s;
@@ -90,17 +91,6 @@ h2{
 .moving-img:hover {
   width: 35%;
   height: 35%;
-}
-
-@media screen and (max-width: 600px) {
-  h2{
-    margin-top: 30%;
-  }
-  .moving-img {
-    width: 70%;
-    height: 70%;
-  }
-  
 }
 
 body {
@@ -135,7 +125,7 @@ body {
 }
 
 
-.layout{
+.layout {
   display: grid;
   grid-template-areas: 
     "header header header"
@@ -181,4 +171,27 @@ footer{
 
 .sidebar-content > *{
   max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .layout {
+    grid-template-areas: 
+    "header"
+    "l_side"
+    "content"
+    "r_side"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto auto;
+  }
+  
+  h2 {
+    margin-top: 0.2em;
+    padding: 0 1rem 0;
+  }
+  .moving-img {
+    width: 70%;
+    height: auto;
+  }
+  
 }
